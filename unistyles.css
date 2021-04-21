@@ -9,7 +9,10 @@ body{
 }
 
 body, ::-webkit-scrollbar, .imgrev::before{
-  background: #0d0d0d;/*#231f20;*/
+/*   background: #ffffff;/*#231f20;*/ 
+  background-image: url('subtle-light-grunge-texture-14.jpg');
+  background-attachment: fixed; 
+  background-size: cover;
 }
 
 *{
@@ -24,7 +27,7 @@ body, ::-webkit-scrollbar, .imgrev::before{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 
 ::-moz-selection, ::selection, ::-webkit-selection{
@@ -81,10 +84,78 @@ p .row{
   margin-bottom: 2px;
 }
 
+.media {
+  position: absolute;
+  top: 125%;
+  z-index: 1;
+  right: 12%;
+  text-align: center;
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.media ul li {
+  color: grey;
+  padding: 12px 0;
+  display: inline-block !important;
+  list-style: none;
+  margin: 0 8px;
+}
+
+.media ul li .fa {
+  color: #000000;
+  font-size: 16px;
+  line-height: 35px;
+  transition: .5s;
+}
+
+.media ul li .fa:hover {
+  color: #ffffff;
+}
+
+.media ul li a {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f7f2f2;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0,0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.media ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.media li:nth-child(1) a:hover {
+  background-color: #030303;
+}
+
+.media ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+
+.media ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+
+.media ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+
 h1{
   white-space: nowrap;
   font-size: 8.1vw;
-  color: #ffffff;
+  color: #000000;
   font-family: sequel, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -127,7 +198,7 @@ del::after{
   position: absolute;
   height: 10px;
   width: 100%;
-  background: #2c2a2a;
+  background: #ffffff;
   top: 50%;
   transform: translate(0, -50%);
   left: 0;
@@ -141,14 +212,14 @@ span{
 p{
   font-family: circular, sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 a{
   text-decoration: none;
   font-family: circular, sans-serif;
   font-size: 14px;
-  color: #fff;/*#222831;*/
+  color: rgb(0, 0, 0);/*#222831;*/
   position: relative;
   transition: color .4s;
 }
@@ -158,8 +229,8 @@ a:hover{
 }
 
 .outline{
-  -webkit-text-stroke: .02em #fff;/*#4bbfda*/;
-  text-stroke: 1px #fff;
+  -webkit-text-stroke: .02em rgb(0, 0, 0);/*#4bbfda*/;
+  text-stroke: 1px rgb(0, 0, 0);
   color: transparent;
 }
 
@@ -271,15 +342,15 @@ a:hover{
 .logo p{
   font-family: circular;
   font-size: 13px;
+  color: black;
 }
-
 
 nav{
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px 5%;
+  padding: 50px 8%;
   z-index: 8;
   right: 0;
   pointer-events: none;
@@ -302,6 +373,7 @@ nav a{
 
 .copy{
   font-size: 12px;
+  color: black;
   transform: translate(0, 15vh);
   opacity: .7;
   font-family: circular;
@@ -357,7 +429,7 @@ nav a{
 .w-txt p{
   font-size: 18px;
   font-family: circular_bold;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .w-txt div span{
@@ -365,14 +437,14 @@ nav a{
   opacity: 0.7;
   font-family: circular;
   padding-top: 2px;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .fot{
   display: flex;
   justify-content: space-between;
   margin: 0 5vw 3vw 5vw;
-  border-top: 1px solid rgba(240, 240, 243, .08);
+  border-top: 1px solid black;
   padding-top: 2vw;
 }
 

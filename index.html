@@ -15,6 +15,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="photos/logo.png">
   <link rel="stylesheet" href="unistyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <meta name="keywords" content="ui/ux, designer, freelance, website, portfolio">
   <meta name="author" content="Yajush Vyas">
   <meta name="description" content="Portfolio of Yajush Vyas. A Open Source Developer currently available for freelance.">
@@ -43,7 +45,7 @@
   <style>
 
   .loader{
-    background: #161618;
+    background: #ffffff;
     width: 100%;
     height: 100%;
     z-index: 100;
@@ -120,6 +122,7 @@
 
   .bnr_c p{
     font-size: 16px;
+    color: black;
   }
 
   .bnr_t{
@@ -139,7 +142,7 @@
   .bnr_t > .no-out h1{
     -webkit-text-stroke: 0 #4bbfda;
     text-shadow: 0 #4bbfda;
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   .bnr_t img{
@@ -202,27 +205,27 @@
 
   .con_p{
     transform: translate(-4.53vw, 5.1%);
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   .btn{
-    border-bottom: 1px solid rgba(240, 240, 243, .18);
+    border-bottom: 1px solid rgba(2, 2, 2, 0.18);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
-    box-shadow: inset 0 0 #fff;
+    box-shadow: inset 0 0 rgb(0, 0, 0);
     transition: .6s;
   }
 
   .btn:hover{
     border-bottom: 1px solid transparent;
-    box-shadow: inset 0 -100px #fff;
+    box-shadow: inset 0 -100px rgb(0, 0, 0);
     padding: 15px 20px;
   }
 
   .btn:hover p{
-    color: #231f20;
+    color: #ffffff;
     cursor: pointer;
   }
 
@@ -238,7 +241,7 @@
 
   .prj_btn:hover{
     border-bottom: 1px solid transparent;
-    box-shadow: inset 0 -100px #fff;
+    box-shadow: inset 0 -100px rgb(0, 0, 0);
     padding: 20px 25px;
   }
 
@@ -305,13 +308,18 @@
   <nav class="col-3">
     <div>
       <a href="about/index.html">about</a><br>
+    </div>
+    <div>
       <a href="projects/index.html">projects</a>
     </div>
-   <div>
-      <a target="_blank" href="https://github.com/notsoocool">Github</a><br>
-      <a target="_blank" href="https://www.linkedin.com/in/yajush-vyas-9465261b4/">Linked-in</a><br>
-      <a href="mailto:notsocoolvy@gmail.com?subject=Lets%20Work%20Together" title="I usually respond in a day.">email</a>
-   </div>
+   <div class="media">
+    <ul>
+      <li><a href="https://github.com/notsoocool"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/yajush-vyas-9465261b4/"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/__vyas.ji__/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="mailto:notsocoolvy@gmail.com?subject=Lets%20Work%20Together"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+  </div>
   </nav>
   <!--MAIN-->
   <!--SCROLL-CTN-->
@@ -320,7 +328,7 @@
       <div class="bnr col-12">
         <div class="bnr_c">
           <img id="scroll" src="photos/scroll.png">
-          <div>
+          <!-- <div>
             <p class="delay">
               <span class="row">
                 <span data-emergence="hidden">Hello! I'm Yajush, an Open-Source enthusiast.</span>
@@ -338,7 +346,7 @@
                 <span data-emergence="hidden"><a style="text-decoration: underline;" href="about/">Read More About Me</a></span>
               </span>
             </p>
-          </div>
+          </div> -->
         </div><br>
         <div class="bnr_t">
 
@@ -514,7 +522,7 @@
              <span data-emergence="hidden">by writing an e-mail.</span>
            </span>
          </p><br>
-         <a href="mailto:rnegic341@gmail.com?subject=Lets%20Work%20Together" class="btn " title="I usually respond in a day.">
+         <a href="mailto:notsocoolvy@gmail.com?subject=Lets%20Work%20Together" class="btn " title="I usually respond in a day.">
            <p>
              <span class="row">
                <span data-emergence="hidden">Get in touch</span>

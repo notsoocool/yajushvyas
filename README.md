@@ -1,2 +1,2 @@
 # My Portfolio
-[Protfolio](https://yajushvyas.us)
+[Portfolio](https://yajushvyas.us)
